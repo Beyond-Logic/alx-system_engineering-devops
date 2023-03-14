@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -mindepth 1 -type d -empty -printf '%h\n' | sort -u | sed 's|.*/||' ; find . -type f -empty -printf '%f\n'
+find . -mindepth 1 -type d -empty -printf '%h\0' -o -type f -empty -printf '%f\0' | tr '\0' '\n' | rev | cut -d '/' -f1 | rev'
