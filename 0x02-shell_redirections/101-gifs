@@ -1,2 +1,2 @@
 #!/bin/bash
-echo *.[gG][iI][fF] *.[gG][iI][fF].* | tr ' ' '\n' | sort -f | sed -e '$a\'
+find . -type f -iname '*.gif' -printf "%f\n" | sort -f | sort -n -k2
