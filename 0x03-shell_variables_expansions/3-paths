@@ -1,2 +1,2 @@
 #!/bin/bash
-dir_count=0; for dir in $(echo $PATH); do [ -d $dir ] && ((dir_count++)); done; echo $dir_count
+dir_count=`echo $PATH | awk '{n=split($0,a,":"); print n}'`; echo $dir_count
