@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH=$PATH | wc -c
+dir_count=0; for dir in $(echo $PATH); do [ -d $dir ] && ((dir_count++)); done; echo $dir_count
