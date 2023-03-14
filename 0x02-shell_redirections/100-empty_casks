@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -dept 2 -empty 
+find . -empty 
