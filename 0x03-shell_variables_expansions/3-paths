@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH=dir_count=`echo $PATH | tr ':' '\n' | wc -l`; echo $dir_count
+export PATH=$PATH | tr ':' '\n' | wc -l
