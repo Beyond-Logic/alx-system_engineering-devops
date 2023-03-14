@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a *.[gG][iI][fF] | sort -f | sed -e '$a\'
+echo *.[gG][iI][fF] *.[gG][iI][fF].* | tr ' ' '\n' | sort -f | sed -e '$a\'
