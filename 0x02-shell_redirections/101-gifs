@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname '*.gif' -printf '%f\n' | sort -f | sed -e '$a\'
+ls -1a *.[gG][iI][fF] | sort -f | sed -e '$a\'
