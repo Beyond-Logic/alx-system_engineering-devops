@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH=$PATH dir_count=0 while [ -n "$path" ] do path=${path#*:} ((dir_count++)) done echo $dir_count
+echo $PATH | tr -cd ':' | wc -c
