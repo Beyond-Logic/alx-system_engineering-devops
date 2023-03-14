@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l | grep ^d | wc -l
+path=$PATH dir_count=0 while [ -n "$path" ] do path=${path#*:} ((dir_count++)) done echo $dir_count
