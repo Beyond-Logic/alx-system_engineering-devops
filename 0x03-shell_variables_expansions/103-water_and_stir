@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($WATER#water + $STIR#stir))#bestchol
+WATER_10=$(printf '%d' "$WATER" $((water#))) STIR_10=$(printf '%d' "$STIR" $((stir#))) SUM_10=$((WATER_10 + STIR_10)) printf '%s\n' "$SUM_10" $((bestchol#))
