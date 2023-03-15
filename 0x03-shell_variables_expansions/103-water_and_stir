@@ -1,2 +1,2 @@
 #!/bin/bash
-$WATER | tr water 01234 $((5#$WATER)) $STIR | tr stir 01234 $((5$STIR)) $(($WATER + $STAIR)) print "%0"
+echo "ibase=water$WATER+ibase=stir$STIR" | bc | xargs -I{} echo "obase=bestchol{}" | bc"
