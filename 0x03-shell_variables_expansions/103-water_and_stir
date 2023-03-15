@@ -1,2 +1,2 @@
 #!/bin/bash
-WATER=$((WATER + STIR)) echo "$WATER"
+$WATER | tr water 01234 $((5#$WATER)) $STIR | tr stir 01234 $((5$STIR)) $(($WATER + $STAIR)) print "%0"
